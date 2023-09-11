@@ -21,7 +21,7 @@ You can click the Preview link to take a look at your changes.
 </td>
 
 <td width="50%" align="center">
-  <img  align="center"  src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=b1ink0&theme=dracula&hide_border=false&no-bg=true&no-frame=true&langs_count=10&layout=compact"/>
+  <img  align="center"  src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=VinayakDGaikwad&theme=light&hide_border=false&no-bg=true&no-frame=true&langs_count=10&layout=compact"/>
   </td>
 </tr>
 </table>
