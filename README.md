@@ -17,7 +17,7 @@ You can click the Preview link to take a look at your changes.
 
   <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=VinayakDGaikwad&theme=light&show_icons=true&count_private=true" />
   <br></br>
-  <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=b1ink0&theme=dracula&hide_border=false" /> 
+  <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=VinayakDGaikwad&theme=light&hide_border=false" /> 
 </td>
 
 <td width="50%" align="center">
