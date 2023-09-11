@@ -1,0 +1,504 @@
+<html>
+
+<head>
+    <title>
+        Vinayak Gaikwad
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin-top: 20px;
+
+            background-color: rgb(215, 219, 254);
+        }
+
+        .video1 {
+            border: black;
+        }
+
+        .video2 {
+            border: black;
+        }
+
+        .video3 {
+            border: black;
+        }
+
+        .timeline {
+            border-left: 3px solid #727cf5;
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+            background: rgba(114, 124, 245, 0.09);
+            margin: 0 auto;
+            letter-spacing: 0.2px;
+            position: relative;
+            line-height: 1.4em;
+            font-size: 1.03em;
+            padding: 50px;
+            list-style: none;
+            text-align: left;
+            max-width: 40%;
+        }
+
+        @media (max-width: 767px) {
+            .timeline {
+                max-width: 98%;
+                padding: 25px;
+            }
+        }
+
+        .timeline h1 {
+            font-weight: 300;
+            font-size: 1.4em;
+        }
+
+        .timeline h2,
+        .timeline h3 {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+
+
+        .timeline .event {
+            border-bottom: 1px dashed #e8ebf1;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        @media (max-width: 767px) {
+            .timeline .event {
+                padding-top: 30px;
+            }
+        }
+
+        .timeline .event:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+
+        .timeline .event:before,
+        .timeline .event:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
+
+        .timeline .event:before {
+            left: -207px;
+            content: attr(data-date);
+            text-align: right;
+            font-weight: 100;
+            font-size: 0.9em;
+            min-width: 120px;
+        }
+
+        @media (max-width: 767px) {
+            .timeline .event:before {
+                left: 0px;
+                text-align: left;
+            }
+        }
+
+        .timeline .event:after {
+            -webkit-box-shadow: 0 0 0 3px #727cf5;
+            box-shadow: 0 0 0 3px #727cf5;
+            left: -55.8px;
+            background: #fff;
+            border-radius: 50%;
+            height: 9px;
+            width: 9px;
+            content: "";
+            top: 5px;
+        }
+
+        @media (max-width: 767px) {
+            .timeline .event:after {
+                left: -31.8px;
+            }
+        }
+
+        .rtl .timeline {
+            border-left: 0;
+            text-align: right;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            border-right: 3px solid #727cf5;
+        }
+
+        .rtl .timeline .event::before {
+            left: 0;
+            right: -170px;
+        }
+
+        .rtl .timeline .event::after {
+            left: 0;
+            right: -55.8px;
+        }
+
+        .hi_header {
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-default bg-light navbar-static-top">
+
+                <a class="navbar-brand" href="#"> <span><img padding="2px" width="40px" height="40px"
+                            src="https://vinayakdgaikwad.github.io/MyProtfolioWebsite/file.png"
+                            style="border-radius: 50%"></span> Vinayak Gaikwad</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active" style="align-items: right;">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/VinayakDGaikwad" class="nav-link" href="#">Gtihub</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://www.goodreads.com/user/show/48804987-vinayak-gaikwad" class="nav-link"
+                                href="#">Literature</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://nobleresponsibilities.blogspot.com/" class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="hi_header"
+                    style="text-align: center; padding-bottom: 250px; padding-top: 250px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                    Hi! I am Vinayak.<br>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+
+                <div class="image_class">
+                    <img src="./file.png" width="100%">
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="div">
+            <h3>Featured Projects</h3>
+
+            <div class="div">
+                <h4> Marksheet </h4>
+                An "marking" application designed to ease transition from paper-based system.
+                I acctually thought that I whould introduce this system in my school for taking atendence! <br><br>
+
+                <div class="d-flex justify-content-center">
+                    <video id="video1" width="60%" controls="controls">
+                        <source src="project2.mkv" type="video/mp4">
+                        <source src="project2.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <button href="#" type="button" class="btn btn-primary">Download Runnable Application</button>
+
+                </div>
+
+
+                <br><br>
+
+                <h4> MyPlay </h4>
+                Low-vision friendly music player. I designed this app for my low-vision sister,
+                it shows song names in large fonts and conrols playback using specific keys. This is a complete working
+                project.
+
+                <br> <br>
+
+                <div class="d-flex justify-content-center">
+                    <video id="video2" width="60%" controls="controls">
+                        <source src="project3.mkv" type="video/mp4">
+                        <source src="project3.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <button href="#" type="button" class="btn btn-primary">Download Runnable Application</button>
+
+                </div>
+
+                <br><br>
+
+                <h4> B-Bank </h4>
+                A small Digital Banking system to store and retrieve information form data stored in ".txt" files on
+                the hard drive. It also has a updater and option to lend bank loans.
+                I came up with a way to verify transactions. I did not have a internet connection then,
+                I was 13 years of age at the time. <br><br>
+                <div class="d-flex justify-content-center">
+                    <video id="video3" width="60%" controls="controls">
+                        <source src="project1.mkv" type="video/mp4">
+                        <source src="project1.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <button href="https://vinayakdgaikwad.github.io/MyProtfolioWebsite/B-Bank.zip" type="button"
+                        class="btn btn-primary">Download Runnable
+                        Application</button>
+                </div>
+                <br><br>
+            </div>
+            <br><br>
+
+            <div class="div">
+                <h4> InstantTranslator (Colaboration Project) </h4>
+
+                <div class="d-flex justify-content-center">
+                    <video id="video1" width="60%" controls="controls">
+                        <source src="project1.mp4" type="video/mp4">
+                        <source src="project1.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <button href="#" type="button" class="btn btn-primary">Download Runnable Application</button>
+
+                </div>
+
+
+            </div>
+
+            <br><br><br>
+
+            <div class="container">
+                <h2>About</h2>
+
+                <div class="row">
+                    <div class="col-sm-6 mb-12">
+                        <img src="./1.jpg" class="card-img-top" alt="...">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-12 mb-sm-0">
+                        <img src="./6.jpg" class="card-img-top" alt="...">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> <br><br>
+
+                <div class="row">
+                    <div class="col-sm-6 mb-12">
+                        <img src="./5.jpg" class="card-img-top" alt="...">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-12 mb-sm-0">
+                        <img src="./4.jpg" class="card-img-top" alt="...">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> <br><br>
+
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <h3>Education</h3>
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">
+
+                                    </h6>
+                                    <div id="content">
+                                        <ul class="timeline">
+
+                                            <li class="event" data-date="2021-- Pursuing">
+                                                <h3>Bachlor of Enginnering In Information Technology</h3>
+                                                <p>Progressive Modern College of Enginnering, Pune</p>
+                                            </li>
+
+                                            <li class="event" data-date="2020">
+                                                <h3>Higher Secondary Education Certificate</h3>
+                                                <p>Nowrosjee Wadia College, Pune</p>
+                                            </li>
+
+                                            <li class="event" data-date="2019">
+                                                <h3>Secondary School Certificate</h3>
+                                                <p>Fr. Agnel's Vidyankur School, Pune</p>
+                                            </li>
+
+                                            <li class="event" data-date="2000">
+                                                <h3>First Cry</h3>
+                                                <p>Deoll</p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <object data="./MyResume.pdf" type="application/pdf" width="100%" height="500px">
+                <p>Unable to display PDF file. <a href="./MyResume.pdf">Download</a> instead.</p>
+            </object>
+
+        </div>
+        <br><br>
+
+        <footer class="text-center text-lg-start bg-white text-muted">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            </section>
+
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Vinayak Gaikwad
+                            </h6>
+
+                            Handcrafted using Bootstrap.
+
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Links
+                            </h6>
+
+                            <a class="nav-link" href="#">About</a>
+
+                            <a class="nav-link" href="#">GitHub</a>
+
+                            <a href="https://www.goodreads.com/user/show/48804987-vinayak-gaikwad" class="nav-link"
+                                href="#">Literature</a>
+                            <a href="https://nobleresponsibilities.blogspot.com/" class="nav-link" href="#">Blog</a>
+
+                        </div>
+
+                        <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> Viman Nagar, Pune</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                vd.g@outlook.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i> + 91 703 864 1845</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.2);">
+                <a class="text-white"> Hosted on AWS EC2 Platform. </a>
+            </div>
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+        <script>
+            // Define your GitHub username
+            const username = "VinayakDGaikwad";
+
+            // Fetch GitHub profile data
+            fetch(`https://api.github.com/users/${username}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Update the card with your profile data
+                    console.log(document.getElementById("followers").textContent = data.followers);
+                    document.getElementById("following").textContent = data.following;
+                    document.getElementById("repositories").textContent = data.public_repos;
+                })
+                .catch(error => {
+                    console.error("Error fetching GitHub profile data:", error);
+                });
+        </script>
+</body>
+
+</html>
