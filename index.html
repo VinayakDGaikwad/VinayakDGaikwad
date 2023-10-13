@@ -13,8 +13,8 @@
     <style>
         body {
             margin-top: 20px;
-
-            background-color: rgb(215, 219, 254);
+            background-image: url('./backgound.jpeg');
+            background-repeat: repeat;
         }
 
         .video1 {
@@ -160,7 +160,7 @@
             <nav class="navbar navbar-expand-lg navbar-light navbar-default bg-light navbar-static-top">
 
                 <a class="navbar-brand" href="#"> <span><img padding="2px" width="40px" height="40px"
-                            src="https://vinayakdgaikwad.github.io/MyProtfolioWebsite/file.png"
+                            src="file.png"
                             style="border-radius: 50%"></span> Vinayak Gaikwad</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -174,7 +174,7 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://github.com/VinayakDGaikwad" class="nav-link" href="#">Gtihub</a>
+                            <a href="https://github.com/VinayakDGaikwad" class="nav-link" href="#">GitHub</a>
                         </li>
 
                         <li class="nav-item">
@@ -196,14 +196,14 @@
             <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="hi_header"
                     style="text-align: center; padding-bottom: 250px; padding-top: 250px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-                    Hi! I am Vinayak.<br>
+                    Hi! I am Vinayak. <br>
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-12 col-sm-12">
 
                 <div class="image_class">
-                    <img src="./file.png" width="100%">
+                    <img src="./vinayak_circuits.png" width="60%">
                 </div>
 
 
@@ -218,7 +218,7 @@
             <div class="div">
                 <h4> Marksheet </h4>
                 An "marking" application designed to ease transition from paper-based system.
-                I acctually thought that I whould introduce this system in my school for taking atendence! <br><br>
+                I actually thought that I would introduce this system in my school for taking attendance! <br><br>
 
                 <div class="d-flex justify-content-center">
                     <video id="video1" width="60%" controls="controls">
@@ -240,7 +240,7 @@
 
                 <h4> MyPlay </h4>
                 Low-vision friendly music player. I designed this app for my low-vision sister,
-                it shows song names in large fonts and conrols playback using specific keys. This is a complete working
+                it shows song names in large fonts and controls playback using specific keys. This is a complete working
                 project.
 
                 <br> <br>
@@ -283,7 +283,7 @@
             <br><br>
 
             <div class="div">
-                <h4> InstantTranslator (Colaboration Project) </h4>
+                <h4> InstantTranslator (Collaboration Project) </h4>
 
                 <div class="d-flex justify-content-center">
                     <video id="video1" width="60%" controls="controls">
@@ -305,16 +305,15 @@
             <br><br><br>
 
             <div class="container">
-                <h2>About</h2>
+                <h2>Certificates</h2>
 
                 <div class="row">
                     <div class="col-sm-6 mb-12">
                         <img src="./1.jpg" class="card-img-top" alt="...">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
+                                <h5 class="card-title">Internshala Trainings</h5>
+                                <p class="card-text">....</p>
 
                             </div>
                         </div>
@@ -363,10 +362,13 @@
             </div>
 
             <div class="row">
+
                 <div class="container">
+
                     <div class="row">
+
+                        <div class="col-md-6">
                         <h3>Education</h3>
-                        <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body">
                                     <h6 class="card-title">
@@ -376,8 +378,8 @@
                                         <ul class="timeline">
 
                                             <li class="event" data-date="2021-- Pursuing">
-                                                <h3>Bachlor of Enginnering In Information Technology</h3>
-                                                <p>Progressive Modern College of Enginnering, Pune</p>
+                                                <h3>Bachelor of Engineering In Information Technology</h3>
+                                                <p>Progressive Modern College of Engineering, Pune</p>
                                             </li>
 
                                             <li class="event" data-date="2020">
@@ -392,11 +394,23 @@
 
                                             <li class="event" data-date="2000">
                                                 <h3>First Cry</h3>
-                                                <p>Deoll</p>
                                             </li>
 
                                         </ul>
                                     </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+                        <div class="col-md-6">
+                            <h3>GitHub Profile</h3>
+                            <div class="card mt-5">
+                                <div class="card-body">
+                                    <p class="card-text"><h5>Followers: <span id="followers"></span></h5></p>
+                                    <p class="card-text"><h5>Following: <span id="following"></span></h5></p>
+                                    <p class="card-text"><h5>Repositories: <span id="repositories"></span></h5></p>
                                 </div>
                             </div>
                         </div>
@@ -418,7 +432,6 @@
             <object data="./MyResume.pdf" type="application/pdf" width="100%" height="500px">
                 <p>Unable to display PDF file. <a href="./MyResume.pdf">Download</a> instead.</p>
             </object>
-
         </div>
         <br><br>
 
@@ -487,11 +500,11 @@
             const username = "VinayakDGaikwad";
 
             // Fetch GitHub profile data
-            fetch(`https://api.github.com/users/${username}`)
+            fetch(`https://api.github.com/users/vinayakdgaikwad`)
                 .then(response => response.json())
                 .then(data => {
                     // Update the card with your profile data
-                    console.log(document.getElementById("followers").textContent = data.followers);
+                    document.getElementById("followers").textContent = data.followers;
                     document.getElementById("following").textContent = data.following;
                     document.getElementById("repositories").textContent = data.public_repos;
                 })
