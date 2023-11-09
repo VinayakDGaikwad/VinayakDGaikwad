@@ -13,7 +13,7 @@
 <td width="50%" align="center">
   <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=VinayakDGaikwad&theme=light&show_icons=true&count_private=true" />
   <br></br>
-  <img  title="" alt="Mark streak" src="[https://github-readme-streak-stats.herokuapp.com/?user=vinayakdgaikwad](https://nirzak-streak-stats.vercel.app/?user=vinayakdgaikwad)" /> 
+  <img  title="" alt="Mark streak" src="https://nirzak-streak-stats.vercel.app/?user=vinayakdgaikwad" /> 
 
 </td>
 
