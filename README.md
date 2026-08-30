@@ -75,6 +75,9 @@ Industrial automation solution with ladder logic programming for synchronized ca
 ### 📊 MasterSheet Attendance System
 Automated attendance tracking system deployed in educational institutions, solving real-world operational challenges.
 
+### 🔧 Harness System - PID Diagram Detection
+AI-powered system combining YOLO object detection with GPT-4o-mini backend for intelligent recognition and analysis of PID diagrams in technical documentation.
+
 ## 📊 GitHub Statistics
 
 <div align="center">
